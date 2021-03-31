@@ -61,18 +61,6 @@ public class School {
         this.teacherList.remove(teacher);
     }
 
-    //this method removes a specific student from the school's list of teachers
-    public void deleteStudent (Student student){
-        this.studentList.remove(student);
-    }
-
-    //this method removes a teacher from a specific index position
-    public void removeTeacherBasedOnListNum (int number){
-        if (number <= this.teacherList.size()-1 && number >= 0) {
-            this.teacherList.remove(this.teacherList.get(number));
-        } else System.out.println("This teacher does not exist, or they have already been removed.");
-    }
-
     //this method removes a student from a specific index position
     public void removeStudentBasedOnListNum (int number){
         if (number <= this.studentList.size()-1 && number >= 0){
