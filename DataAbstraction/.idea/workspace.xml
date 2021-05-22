@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cda01b74-6f02-4093-97b3-88fb6e580678" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qifCflrhld14oEa7UbtXgGSDYZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Gradle.MethodTests">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="DataAbstraction.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MethodTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MethodTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MethodTests.testCustomerDeposit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MethodTests.testCustomerDeposit&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MethodTests.testCustomerWithdraw" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MethodTests.testCustomerWithdraw&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MethodTests.testWithdrawPrinting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;MethodTests.testWithdrawPrinting&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MethodTests" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.MethodTests.testCustomerWithdraw" />
+        <item itemvalue="Gradle.MethodTests.testCustomerDeposit" />
+        <item itemvalue="Gradle.MethodTests.testWithdrawPrinting" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cda01b74-6f02-4093-97b3-88fb6e580678" name="Default Changelist" comment="" />
+      <created>1617567205027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617567205027</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="150" y="125" width="1030" height="575" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1618088405490">
+      <screen x="50" y="25" width="1230" height="775" />
+    </state>
+    <state x="150" y="125" width="1030" height="575" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/50.25.1230.775@50.25.1230.775" timestamp="1618088405490" />
+    <state x="478" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1618036916226">
+      <screen x="50" y="25" width="1230" height="775" />
+    </state>
+    <state x="478" y="100" key="#com.intellij.ide.util.MemberChooser/50.25.1230.775@50.25.1230.775" timestamp="1618036916226" />
+    <state width="1188" height="126" key="GridCell.Tab.0.bottom" timestamp="1621574870346">
+      <screen x="46" y="25" width="1234" height="775" />
+    </state>
+    <state width="1198" height="197" key="GridCell.Tab.0.bottom/39.23.1241.777@39.23.1241.777" timestamp="1617934113081" />
+    <state width="1198" height="197" key="GridCell.Tab.0.bottom/40.23.1240.777@40.23.1240.777" timestamp="1618013323803" />
+    <state width="1188" height="126" key="GridCell.Tab.0.bottom/44.25.1236.775@44.25.1236.775" timestamp="1619319274491" />
+    <state width="1188" height="126" key="GridCell.Tab.0.bottom/45.25.1235.775@45.25.1235.775" timestamp="1620437938292" />
+    <state width="1188" height="126" key="GridCell.Tab.0.bottom/46.25.1234.775@46.25.1234.775" timestamp="1621574870346" />
+    <state width="1188" height="126" key="GridCell.Tab.0.bottom/48.25.1232.775@48.25.1232.775" timestamp="1618126976153" />
+    <state width="1188" height="194" key="GridCell.Tab.0.bottom/50.25.1230.775@50.25.1230.775" timestamp="1618099481490" />
+    <state width="1188" height="126" key="GridCell.Tab.0.center" timestamp="1621574870344">
+      <screen x="46" y="25" width="1234" height="775" />
+    </state>
+    <state width="1198" height="197" key="GridCell.Tab.0.center/39.23.1241.777@39.23.1241.777" timestamp="1617934113080" />
+    <state width="1198" height="197" key="GridCell.Tab.0.center/40.23.1240.777@40.23.1240.777" timestamp="1618013323802" />
+    <state width="1188" height="126" key="GridCell.Tab.0.center/44.25.1236.775@44.25.1236.775" timestamp="1619319274490" />
+    <state width="1188" height="126" key="GridCell.Tab.0.center/45.25.1235.775@45.25.1235.775" timestamp="1620437938291" />
+    <state width="1188" height="126" key="GridCell.Tab.0.center/46.25.1234.775@46.25.1234.775" timestamp="1621574870344" />
+    <state width="1188" height="126" key="GridCell.Tab.0.center/48.25.1232.775@48.25.1232.775" timestamp="1618126976152" />
+    <state width="1188" height="194" key="GridCell.Tab.0.center/50.25.1230.775@50.25.1230.775" timestamp="1618099481489" />
+    <state width="1188" height="126" key="GridCell.Tab.0.left" timestamp="1621574870344">
+      <screen x="46" y="25" width="1234" height="775" />
+    </state>
+    <state width="1198" height="197" key="GridCell.Tab.0.left/39.23.1241.777@39.23.1241.777" timestamp="1617934113080" />
+    <state width="1198" height="197" key="GridCell.Tab.0.left/40.23.1240.777@40.23.1240.777" timestamp="1618013323802" />
+    <state width="1188" height="126" key="GridCell.Tab.0.left/44.25.1236.775@44.25.1236.775" timestamp="1619319274490" />
+    <state width="1188" height="126" key="GridCell.Tab.0.left/45.25.1235.775@45.25.1235.775" timestamp="1620437938290" />
+    <state width="1188" height="126" key="GridCell.Tab.0.left/46.25.1234.775@46.25.1234.775" timestamp="1621574870344" />
+    <state width="1188" height="126" key="GridCell.Tab.0.left/48.25.1232.775@48.25.1232.775" timestamp="1618126976151" />
+    <state width="1188" height="194" key="GridCell.Tab.0.left/50.25.1230.775@50.25.1230.775" timestamp="1618099481488" />
+    <state width="1188" height="126" key="GridCell.Tab.0.right" timestamp="1621574870346">
+      <screen x="46" y="25" width="1234" height="775" />
+    </state>
+    <state width="1198" height="197" key="GridCell.Tab.0.right/39.23.1241.777@39.23.1241.777" timestamp="1617934113080" />
+    <state width="1198" height="197" key="GridCell.Tab.0.right/40.23.1240.777@40.23.1240.777" timestamp="1618013323802" />
+    <state width="1188" height="126" key="GridCell.Tab.0.right/44.25.1236.775@44.25.1236.775" timestamp="1619319274491" />
+    <state width="1188" height="126" key="GridCell.Tab.0.right/45.25.1235.775@45.25.1235.775" timestamp="1620437938292" />
+    <state width="1188" height="126" key="GridCell.Tab.0.right/46.25.1234.775@46.25.1234.775" timestamp="1621574870346" />
+    <state width="1188" height="126" key="GridCell.Tab.0.right/48.25.1232.775@48.25.1232.775" timestamp="1618126976152" />
+    <state width="1188" height="194" key="GridCell.Tab.0.right/50.25.1230.775@50.25.1230.775" timestamp="1618099481489" />
+    <state width="1188" height="241" key="GridCell.Tab.1.bottom" timestamp="1618107566002">
+      <screen x="48" y="25" width="1232" height="775" />
+    </state>
+    <state width="1198" height="245" key="GridCell.Tab.1.bottom/39.23.1241.777@39.23.1241.777" timestamp="1617745051227" />
+    <state width="1188" height="241" key="GridCell.Tab.1.bottom/48.25.1232.775@48.25.1232.775" timestamp="1618107566002" />
+    <state width="1188" height="241" key="GridCell.Tab.1.bottom/50.25.1230.775@50.25.1230.775" timestamp="1618088269761" />
+    <state width="1188" height="241" key="GridCell.Tab.1.center" timestamp="1618107566002">
+      <screen x="48" y="25" width="1232" height="775" />
+    </state>
+    <state width="1198" height="245" key="GridCell.Tab.1.center/39.23.1241.777@39.23.1241.777" timestamp="1617745051226" />
+    <state width="1188" height="241" key="GridCell.Tab.1.center/48.25.1232.775@48.25.1232.775" timestamp="1618107566002" />
+    <state width="1188" height="241" key="GridCell.Tab.1.center/50.25.1230.775@50.25.1230.775" timestamp="1618088269760" />
+    <state width="1188" height="241" key="GridCell.Tab.1.left" timestamp="1618107566001">
+      <screen x="48" y="25" width="1232" height="775" />
+    </state>
+    <state width="1198" height="245" key="GridCell.Tab.1.left/39.23.1241.777@39.23.1241.777" timestamp="1617745051226" />
+    <state width="1188" height="241" key="GridCell.Tab.1.left/48.25.1232.775@48.25.1232.775" timestamp="1618107566001" />
+    <state width="1188" height="241" key="GridCell.Tab.1.left/50.25.1230.775@50.25.1230.775" timestamp="1618088269759" />
+    <state width="1188" height="241" key="GridCell.Tab.1.right" timestamp="1618107566002">
+      <screen x="48" y="25" width="1232" height="775" />
+    </state>
+    <state width="1198" height="245" key="GridCell.Tab.1.right/39.23.1241.777@39.23.1241.777" timestamp="1617745051227" />
+    <state width="1188" height="241" key="GridCell.Tab.1.right/48.25.1232.775@48.25.1232.775" timestamp="1618107566002" />
+    <state width="1188" height="241" key="GridCell.Tab.1.right/50.25.1230.775@50.25.1230.775" timestamp="1618088269760" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MethodTests.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
