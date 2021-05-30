@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab text="GAME OF CHANCE">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="btnHigher" disable="true" layoutX="188.0" layoutY="325.0" mnemonicParsing="false" onAction="#isHigher" text="HIGHER" textFill="#2e593c">
+                     <font>
+                        <Font name="Lilita One" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLower" disable="true" layoutX="318.0" layoutY="325.0" mnemonicParsing="false" onAction="#isLower" text="LOWER" textFill="#741c1c">
+                     <font>
+                        <Font name="Lilita One" size="21.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="62.0" prefHeight="80.0" prefWidth="477.0" text="Click roll to roll a dice! Then, vote whether you think the computer's roll will be higher or lower than your roll. If you voted correctly, you win! If you voted incorrectly, the computer wins." wrapText="true">
+                     <font>
+                        <Font name="Lilita One" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="101.0" layoutY="141.0" text="CPU">
+                     <font>
+                        <Font name="Lilita One" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="466.0" layoutY="141.0" text="YOU">
+                     <font>
+                        <Font name="Lilita One" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnBet" layoutX="334.0" layoutY="287.0" mnemonicParsing="false" onAction="#betMoney" text="Bet">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <TextField fx:id="txtAmount" layoutX="216.0" layoutY="287.0" prefHeight="29.0" prefWidth="105.0" promptText="Enter amount">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+                  <Label layoutX="24.0" layoutY="386.0" text="CPU wallet:" textFill="#a86f02">
+                     <font>
+                        <Font name="Lilita One" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="445.0" layoutY="386.0" text="Your wallet:" textFill="#a86f02">
+                     <font>
+                        <Font name="Lilita One" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBetPool" layoutX="203.0" layoutY="130.0" prefHeight="37.0" prefWidth="107.0" text="Money on the line:">
+                     <font>
+                        <Font name="Lilita One" size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.2589928057553957">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6513158082962036" green="0.4124999940395355" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.8486841917037964" green="0.7355263233184814" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="lblYourNumber" alignment="CENTER" layoutX="457.0" layoutY="198.0" prefHeight="23.0" prefWidth="44.0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCPUNumber" alignment="CENTER" layoutX="92.0" layoutY="196.0" prefHeight="26.0" prefWidth="43.0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblMoneyPool" layoutX="317.0" layoutY="140.0" prefHeight="17.0" prefWidth="82.0" text="0.00" />
+                  <Label fx:id="lblCPUWallet" layoutX="98.0" layoutY="386.0" prefHeight="17.0" prefWidth="97.0" text="10000" />
+                  <Label fx:id="lblYourWallet" layoutX="523.0" layoutY="386.0" prefHeight="17.0" prefWidth="78.0" text="10000" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="5.0" text="GAME OF CHANCE">
+                     <font>
+                        <Font name="Youtube Star" size="58.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.4943977591036415" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.23999999463558197" green="0.5277142524719238" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.08433844894170761" green="0.3139985501766205" blue="0.46710526943206787" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                  <Button fx:id="btnRoll" disable="true" layoutX="253.0" layoutY="222.0" mnemonicParsing="false" onAction="#rollDice" text="ROLL">
+                     <font>
+                        <Font name="Youtube Star" size="26.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="90.0" layoutY="386.0" text="\$" />
+                  <Label layoutX="515.0" layoutY="386.0" text="\$" />
+                  <Label layoutX="309.0" layoutY="140.0" text="\$" />
+                  <Label layoutX="444.0" layoutY="365.0" text="Your bet: ">
+                     <font>
+                        <Font name="Lilita One" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="365.0" text="CPU's bet:">
+                     <font>
+                        <Font name="Lilita One" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCPUbet" layoutX="90.0" layoutY="365.0" text="\$0.00" />
+                  <Label fx:id="lblUserBet" layoutX="515.0" layoutY="365.0" text="\$0.00" />
+                  <Label fx:id="lblResult" alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="172.0" prefHeight="30.0" prefWidth="318.0" wrapText="true">
+                     <font>
+                        <Font name="Lilita One" size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="BATTLE LOG">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="listLogs" layoutX="39.0" layoutY="51.0" prefHeight="338.0" prefWidth="516.0" />
+                  <Label layoutX="223.0" layoutY="2.0" text="BATTLE LOG">
+                     <font>
+                        <Font name="Youtube Star" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="16.0" text="Losses:">
+                     <font>
+                        <Font name="Lilita One" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="492.0" layoutY="16.0" text="Wins:">
+                     <font>
+                        <Font name="Lilita One" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLosses" layoutX="89.0" layoutY="17.0" text="0">
+                     <font>
+                        <Font name="Lilita One" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblWins" layoutX="532.0" layoutY="17.0" text="0">
+                     <font>
+                        <Font name="Lilita One" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="398.0" text="Money Lost:">
+                     <font>
+                        <Font name="Lilita One" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="413.0" layoutY="398.0" text="Money Won:">
+                     <font>
+                        <Font name="Lilita One" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblMoneyLost" layoutX="119.0" layoutY="397.0" prefHeight="17.0" prefWidth="88.0" text="\$0.00" />
+                  <Label fx:id="lblMoneyWon" layoutX="494.0" layoutY="397.0" prefHeight="17.0" prefWidth="67.0" text="\$0.00" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
