@@ -42,6 +42,7 @@ public class Controller {
     public Label lblNumOfFriendsInGroup;
     public Label lblNumOfGroups;
     public Label lblSavedGroup;
+    public Label lblDeletedGroupMsg;
 
     public ListView <Friend> listFriends;
     public ListView <FriendGroup> listGroups;
@@ -129,7 +130,8 @@ public class Controller {
         btnSaveGroup.setDisable(true);
         btnDeleteGroup.setDisable(true);
 
-        lblSavedGroup.setText("Successfully saved all groups!");
+        lblSavedGroup.setText("Successfully saved all displayed groups!");
+        lblDeletedGroupMsg.setText("");
     }
 
     public void saveIndividualGroup(ActionEvent event) throws IOException{
@@ -140,6 +142,7 @@ public class Controller {
         group.writeToIndividualFile();
 
         lblSavedGroup.setText("Successfully saved " + group.getName() + " to its own file!");
+        lblDeletedGroupMsg.setText("");
 
     }
 
@@ -182,6 +185,7 @@ public class Controller {
         loadFile(groupToLoad);
 
         txtGroupToLoad.clear();
+        lblDeletedGroupMsg.setText("");
 
         btnSaveGroup.setDisable(false);
         btnDeleteGroup.setDisable(false);
@@ -193,7 +197,8 @@ public class Controller {
 
         loadFile("Groups.txt");
         updateGroupNumbers();
-        lblSavedGroup.setText("Loaded all groups (including hidden ones)");
+        lblSavedGroup.setText("Loaded all groups!");
+        lblDeletedGroupMsg.setText("");
 
         btnSaveIndividualGroup.setDisable(false);
         btnSaveGroup.setDisable(false);
@@ -226,6 +231,8 @@ public class Controller {
         lblFriendsInGroup.setText(listOfFriends);
         btnDeleteGroup.setDisable(false);
         updateFriendNumbers();
+
+        lblDeletedGroupMsg.setText("");
     }
 
     //Removes friend from display list but not from file. The user will have to click
@@ -317,6 +324,7 @@ public class Controller {
 
         numOfGroups++;
         updateGroupNumbers();
+        lblDeletedGroupMsg.setText("");
     }
 
     //Removes group from displayed group list, but not from saved file list.
@@ -331,6 +339,9 @@ public class Controller {
 
         listGroups.getItems().remove(group);
         numOfGroups = listGroups.getItems().size();
+
+        lblSavedGroup.setText("");
+        lblDeletedGroupMsg.setText("Deleted group from DISPLAYED list. Click save again to save current displayed list.");
         updateGroupNumbers();
     }
 

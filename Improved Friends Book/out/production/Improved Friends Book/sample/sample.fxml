@@ -208,6 +208,7 @@
                         </TextField>
                         <Button fx:id="btnSearch" layoutX="27.0" layoutY="62.0" mnemonicParsing="false" onAction="#loadIndividualGroup" text="Search Group" />
                         <Label fx:id="lblSavedGroup" alignment="CENTER" contentDisplay="CENTER" layoutX="315.0" layoutY="75.0" prefHeight="36.0" prefWidth="275.0" textFill="#00c127" wrapText="true" />
+                        <Label fx:id="lblDeletedGroupMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="315.0" layoutY="75.0" prefHeight="36.0" prefWidth="275.0" textFill="#bf0000" wrapText="true" />
                      </children>
                   </AnchorPane>
               </content>
