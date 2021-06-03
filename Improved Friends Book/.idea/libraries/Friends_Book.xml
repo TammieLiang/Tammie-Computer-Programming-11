@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Friends Book">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Friends_Book_jar/Friends Book.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
