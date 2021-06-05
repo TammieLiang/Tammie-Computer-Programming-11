@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane prefHeight="627.0" prefWidth="723.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Menu">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="658.0" fitWidth="882.0" layoutX="-49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_startBG.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="202.0" fitWidth="375.0" layoutX="186.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_logo.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="212.0" layoutY="283.0" prefHeight="158.0" prefWidth="192.0" spacing="20.0">
+                           <children>
+                              <TextField fx:id="txtUsername" prefHeight="59.0" prefWidth="192.0" promptText="Username">
+                                 <font>
+                                    <Font name="Lilita One" size="34.0" />
+                                 </font></TextField>
+                              <TextField fx:id="txtPetName" prefHeight="60.0" prefWidth="192.0" promptText="Pet name">
+                                 <font>
+                                    <Font name="Lilita One" size="33.0" />
+                                 </font></TextField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="413.0" layoutY="280.0" prefHeight="157.0" prefWidth="203.0" spacing="20.0">
+                           <children>
+                              <ImageView fx:id="btnChangeUsername" fitHeight="94.0" fitWidth="175.0" onMouseClicked="#changeUsername" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resources/MePet_changeBTN.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="btnChangePetname" fitHeight="92.0" fitWidth="174.0" onMouseClicked="#setPetName" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resources/MePet_changeBTN.png" />
+                                 </image>
+                              </ImageView>
+                           </children></VBox>
+                        <ImageView fx:id="imgLoad" fitHeight="97.0" fitWidth="229.0" layoutX="264.0" layoutY="455.0" onMouseClicked="#loadProgress" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_loadBTN.png" />
+                           </image></ImageView>
+                        <Label fx:id="lblSetNameSuccess" alignment="CENTER" layoutX="212.0" layoutY="433.0" prefHeight="23.0" prefWidth="337.0" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="11.0" layoutY="556.0" text="Music: Cubic Castles Qbee Fields" textFill="#846dce">
+                           <font>
+                              <Font name="Lilita One" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblStartMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="134.0" layoutY="217.0" prefHeight="32.0" prefWidth="499.0" text="Load your progress before you begin!">
+                           <font>
+                              <Font name="Krungthep" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Lobby">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="661.0" fitWidth="826.0" layoutX="-20.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_lobbyBG.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="250.0" fitWidth="300.0" layoutX="236.0" layoutY="213.0" onMouseClicked="#changeDialogue" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_pet.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.0" fitWidth="236.0" layoutX="-25.0" layoutY="529.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/MePet_balanceBar.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="152.0" fitWidth="528.0" layoutX="109.0" layoutY="98.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/MePet_speechBubble.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="316.0" layoutX="-14.0" layoutY="-6.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/MePet_nameBar.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblPetName" alignment="CENTER" layoutX="183.0" layoutY="55.0" prefHeight="46.0" prefWidth="407.0" text="Load your PetName from the Menu!">
+                           <font>
+                              <Font name="Lilita One" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblUsername" layoutX="16.0" layoutY="5.0" prefHeight="35.0" prefWidth="295.0" text="Load Name From Menu" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblPetDialogue" alignment="CENTER" layoutX="146.0" layoutY="110.0" prefHeight="90.0" prefWidth="461.0" text="Hi! Welcome to MePet!" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgTalk" fitHeight="164.0" fitWidth="282.0" layoutX="239.0" layoutY="460.0" onMouseClicked="#talk" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_talkBTN.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="31.0" layoutY="545.0" text="Balance:" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblBalance" layoutX="122.0" layoutY="546.0" prefHeight="24.0" prefWidth="118.0" text="0.00" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="109.0" layoutY="546.0" text="\$" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="20.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Shop">
+              <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="581.0" prefWidth="772.0">
+                     <children>
+                        <ImageView fitHeight="817.0" fitWidth="842.0" layoutX="-23.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_shopBG.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="138.0" layoutX="508.0" layoutY="503.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/MePet_buttonShadow.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="129.0" fitWidth="287.0" layoutX="256.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_shop.png" />
+                           </image>
+                        </ImageView>
+                        <ListView fx:id="listShopItems" layoutX="38.0" layoutY="303.0" onMouseClicked="#displayStoreItem" prefHeight="239.0" prefWidth="299.0" />
+                        <Button fx:id="btnPurchase" layoutX="509.0" layoutY="501.0" mnemonicParsing="false" onAction="#purchaseItem" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: #ffae00;" text="PURCHASE" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="21.0" />
+                           </font>
+                        </Button>
+                        <Separator layoutX="384.0" layoutY="236.0" orientation="VERTICAL" prefHeight="321.0" prefWidth="5.0" />
+                        <ImageView fitHeight="129.0" fitWidth="127.0" layoutX="64.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_storeOwner.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="86.0" fitWidth="520.0" layoutX="172.0" layoutY="120.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/MePet_speechBubble2.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblStoreOwnerTalk" alignment="CENTER" contentDisplay="CENTER" layoutX="252.0" layoutY="127.0" prefHeight="71.0" prefWidth="413.0" style="-fx-background-color: WHITE;" text="Welcome to MeShop! Buy some food or drinks for your pet. They're all made by me in the best quality! NO refunds or exchanges, not that you will want to return such quality anyways. By the way, we NEVER run out of stock!" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="458.0" layoutY="430.0" text="Price:">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="400.0" layoutY="321.0" text="Product info:">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="449.0" layoutY="280.0" text="Name:">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFoodName" alignment="TOP_LEFT" layoutX="518.0" layoutY="280.0" prefHeight="30.0" prefWidth="168.0">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFoodInfo" alignment="TOP_LEFT" layoutX="517.0" layoutY="322.0" prefHeight="124.0" prefWidth="238.0" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFoodPrice" alignment="TOP_LEFT" layoutX="517.0" layoutY="430.0" prefHeight="33.0" prefWidth="188.0">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnLookAround" layoutX="82.0" layoutY="247.0" mnemonicParsing="false" onAction="#loadStore" text="Take A Look Around">
+                           <font>
+                              <Font name="Lilita One" size="21.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="lblPurchaseStatus" layoutX="418.0" layoutY="460.0" prefHeight="39.0" prefWidth="326.0" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="227.0" layoutY="210.0" style="-fx-background-color: WHITE;" text="LOAD YOUR INVENTORY OR PROGRESS BEFORE MAKING NEW PURCHASES!" textFill="RED" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="18.0" layoutY="551.0" text="Balance:" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblBalance1" layoutX="109.0" layoutY="552.0" prefHeight="24.0" prefWidth="118.0" text="0.00" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="96.0" layoutY="552.0" text="\$" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="20.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Quests">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="650.0" fitWidth="826.0" layoutX="-23.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_questsBG.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="117.0" fitWidth="319.0" layoutX="213.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_quests.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="138.0" layoutY="118.0" prefHeight="124.0" prefWidth="206.0" spacing="15.0">
+                           <children>
+                              <TextField fx:id="txtQuestName" prefHeight="29.0" prefWidth="227.0" promptText="Task/goal name">
+                                 <font>
+                                    <Font name="Lilita One" size="18.0" />
+                                 </font></TextField>
+                              <TextField fx:id="txtQuestInfo" alignment="TOP_LEFT" prefHeight="68.0" prefWidth="170.0" promptText="Brief description of task.  ">
+                                 <font>
+                                    <Font name="Lilita One" size="16.0" />
+                                 </font></TextField>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" layoutX="57.0" layoutY="96.0" prefHeight="118.0" prefWidth="67.0" spacing="25.0">
+                           <children>
+                              <Label text="Name:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Lilita One" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Info:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Lilita One" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <ListView fx:id="listQuests" layoutX="39.0" layoutY="289.0" onMouseClicked="#displayQuest" prefHeight="238.0" prefWidth="304.0" />
+                        <Separator layoutX="364.0" layoutY="284.0" orientation="VERTICAL" prefHeight="272.0" prefWidth="37.0" />
+                        <VBox alignment="TOP_RIGHT" layoutX="427.0" layoutY="277.0" prefHeight="72.0" prefWidth="112.0" spacing="10.0">
+                           <children>
+                              <Label text="Goal:">
+                                 <font>
+                                    <Font name="Lilita One" size="18.0" />
+                                 </font></Label>
+                              <Label text="Description:">
+                                 <font>
+                                    <Font name="Lilita One" size="18.0" />
+                                 </font></Label>
+                           </children></VBox>
+                        <ImageView fitHeight="139.0" fitWidth="112.0" layoutX="375.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_questGladiator.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="51.0" fitWidth="101.0" layoutX="632.0" layoutY="506.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@resources/MePet_buttonShadow.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnCompleteQuest" fitHeight="53.0" fitWidth="183.0" layoutX="438.0" layoutY="504.0" onMouseClicked="#completeQuest" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_completeBTN.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblGladiatorTalk" layoutX="498.0" layoutY="116.0" prefHeight="130.0" prefWidth="259.0" text="Hey warrior!! These are the quests you need to conquer in your life! Once you complete them, reward yourself and buy your pet some food or drinks! Go gettem!!" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Krungthep" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnUpdateAfterChanges" layoutX="226.0" layoutY="540.0" mnemonicParsing="false" onAction="#saveCurrentListOfQuests" text="Save Current List">
+                           <font>
+                              <Font name="Lilita One" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="250.0" layoutY="247.0" mnemonicParsing="false" onAction="#addAndSaveQuest" text="Add and Save">
+                           <font>
+                              <Font name="Lilita One" size="13.0" />
+                           </font></Button>
+                        <Button layoutX="40.0" layoutY="247.0" mnemonicParsing="false" onAction="#addAndSaveBigQuest" prefWidth="172.0" text="Add and Save as BIG Quest">
+                           <font>
+                              <Font name="Lilita One" size="13.0" />
+                           </font></Button>
+                        <Button layoutX="48.0" layoutY="540.0" mnemonicParsing="false" onAction="#loadQuests" text="Load Saved Quests">
+                           <font>
+                              <Font name="Lilita One" size="13.0" />
+                           </font></Button>
+                        <Label layoutX="472.0" layoutY="463.0" text="Reward:">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblQuestInfo" alignment="TOP_LEFT" layoutX="555.0" layoutY="309.0" prefHeight="151.0" prefWidth="206.0" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblQuestName" alignment="TOP_LEFT" layoutX="555.0" layoutY="277.0" prefHeight="23.0" prefWidth="202.0" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnDeleteQuest" layoutX="632.0" layoutY="506.0" mnemonicParsing="false" onAction="#deleteQuest" style="-fx-background-color: #c80000#c80000;" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="25.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="lblQuestReward" alignment="TOP_LEFT" layoutX="555.0" layoutY="463.0" prefHeight="26.0" prefWidth="207.0">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Vent">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="723.0" fitWidth="850.0" layoutX="-7.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_VentBG.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="269.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_Vent.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="txtVent" alignment="TOP_LEFT" layoutX="30.0" layoutY="180.0" prefHeight="323.0" prefWidth="707.0" promptText="Vent your heart out. No data will be saved.">
+                           <font>
+                              <Font name="Lilita One" size="15.0" />
+                           </font></TextField>
+                        <ImageView fx:id="imgClearBTN" fitHeight="47.0" fitWidth="93.0" layoutX="642.0" layoutY="517.0" onMouseClicked="#clearVent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_clearBTN.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="117.0" fitWidth="137.0" layoutX="88.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_Heartoohart.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblHeartoohartTalk" layoutX="222.0" layoutY="78.0" prefHeight="93.0" prefWidth="513.0" text="Hi! I'm Heartoohart. You have  a lot on your mind today, and that's okay! Unload it all here. I grew ears just for you! :) I will not keep your info or tell it to anybody else so just let it all out! You'll feel so much better." wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgTalkToHart" fitHeight="53.0" fitWidth="170.0" layoutX="27.0" layoutY="513.0" onMouseClicked="#talkToHeartoohart" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_talkBTN.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tabInventory" text="Inventory">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="692.0" fitWidth="837.0" layoutX="-25.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_inventoryBG.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="138.0" fitWidth="163.0" layoutX="113.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_pet.png" />
+                           </image>
+                        </ImageView>
+                        <ListView fx:id="listInventoryItems" layoutX="390.0" layoutY="226.0" onMouseClicked="#displayInventoryItem" prefHeight="279.0" prefWidth="349.0" />
+                        <ImageView fitHeight="174.0" fitWidth="405.0" layoutX="168.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_inventory.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="394.0" layoutY="191.0" text="Items:" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="21.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgFeed" fitHeight="150.0" fitWidth="200.0" layoutX="94.0" layoutY="478.0" onMouseClicked="#feedPet" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/MePet_feedBTN.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="40.0" layoutY="288.0" text="Product info:" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="252.0" text="Name:" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="400.0" text="Quantity:" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFoodNameInv" alignment="TOP_LEFT" layoutX="151.0" layoutY="253.0" prefHeight="30.0" prefWidth="168.0" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFoodInfoInv" alignment="TOP_LEFT" layoutX="151.0" layoutY="290.0" prefHeight="107.0" prefWidth="220.0" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFoodQuantityInv" alignment="TOP_LEFT" layoutX="153.0" layoutY="401.0" prefHeight="41.0" prefWidth="188.0" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="saveInventory" layoutX="390.0" layoutY="535.0" mnemonicParsing="false" onAction="#saveCurrentInventory" text="Save Items Currently Displayed">
+                           <font>
+                              <Font name="Lilita One" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnLoadInventory" layoutX="627.0" layoutY="191.0" mnemonicParsing="false" onAction="#loadInventoryFood" text="Load Inventory">
+                           <font>
+                              <Font name="Lilita One" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="lblFeedStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="429.0" prefHeight="46.0" prefWidth="312.0" textFill="#b8ff9e" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="390.0" layoutY="92.0" prefHeight="78.0" prefWidth="350.0" text="If you didn't load your inventory before purchasing an item, load it now or you will lose all your items when you feed your pet!" textFill="#ffc2c2" wrapText="true">
+                           <font>
+                              <Font name="Lilita One" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblInventorySaveStatus" layoutX="391.0" layoutY="512.0" prefHeight="17.0" prefWidth="347.0" textFill="WHITE">
+                           <font>
+                              <Font name="Lilita One" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
